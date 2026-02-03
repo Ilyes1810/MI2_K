@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <link rel="icon" href="image/logo.png">
+    <link rel="icon" href="../images/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Table des Jedi - Accueil</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<video autoplay muted loop playsinline id="video-bg">
-    <source src="video/etoile.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas la vidéo HTML5.
-</video>
+    <link rel="stylesheet" href="../css/style.css">
 
-<div class="overlay"></div>
+</head>
+
+<body>
+    <video autoplay muted loop playsinline id="video-bg">
+        <source src="../video/etoile.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+
+    <div class="overlay"></div>
+
     <header>
-       <img src="image/logo.png" alt="Logo" width="15%" > 
+        <img src="../images/logo.png" alt="Logo" width="15%">
         <div id="place"> </div>
         <nav>
             <ul>
-                <li><a href="accueil.html">Accueil</a></li> 
+                <li><a href="accueil.html">Accueil</a></li>
                 <li><a href="produits.html">La Carte</a></li>
                 <li><a href="connexion.html">Connexion</a></li>
                 <li><a href="profil.html">Mon Profil</a></li>
                 <li><a href="notation.html">Donner mon avis</a></li>
-                
+
                 <input type="text" class="search-input" placeholder="Ex: Lait bleu, Ronto Wrap...">
                 <button class="search-btn">
-                🔍  
+                    🔍
                 </button>
             </ul>
-            
+
         </nav>
     </header>
 
     <main>
-        
+        <div id="bienvenue">
 
-        <section id="plat-du-jour"> 
-            <h2>La Recommandation du Conseil : Plat du Jour</h2>
+            <h1>Bienvenue sur la Table des Jedi</h1>
+
+        </div>
+
+        <div class="cta-container">
+            <input type="button" class="btn-carte" value="Voir la carte">
+        </div>
+        <div id="presentation">
+            <h1> Gouttez au meilleur plat de la galaxie !</h1>
+        </div>
+        <section id="plat-du-jour">
+            <h2>Ce que le Conseil des jedi vous recommande :</h2>
+            <div id="plats-container">
+                <div id="slider">
+
+                    <p><img src="../images/boisson/jusdejabba.jpg" alt="Jus de Jabba">
+                    <h1>Boisson</h1>
+                    <h3>Jus de Jabba</h3>
+                    </p>
+                    <p><img src="../images/plats/CotelettesdeDewback.jpg" alt="Cotelettes de Dewback">
+                    <h1>Plats</h1>
+                    <h3> Cotelettes de Dewback</h3>
+                    </p>
+
+                    <p><img src="../images/Snacks et Sucreries/fruitsjogan.jpg" alt="fruitsjogan"></p>
+                    <p><img src="../images/Spécialités Exotiques/tartaredeYipYip.jpg" alt="tartaredeYipYip"></p>
+
+                </div>
+            </div>
             <article>
                 <h3>Ragoût de racine d'Endor</h3>
-                <p>Une spécialité forestière savoureuse préparée selon la recette originale de Maître Yoda sur Dagobah.</p>
+                <p>Une spécialité forestière savoureuse préparée selon la recette originale de Maître Yoda sur Dagobah.
+                </p>
                 <h4>Ingrédients :</h4>
                 <ul>
                     <li>Racines de bois de fer d'Endor</li>
@@ -51,7 +83,7 @@
             </article>
         </section>
 
-        <section id="frequents"> 
+        <section id="frequents">
             <h2>Les Incontournables de la Galaxie</h2>
             <ul>
                 <li><strong>Lait Bleu (Blue Milk)</strong> : Le célèbre lait de bantha de Tatooine 🥛.</li>
@@ -66,4 +98,5 @@
     </footer>
 
 </body>
+
 </html>
