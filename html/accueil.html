@@ -19,30 +19,34 @@
     <div class="overlay"></div>
 
     <header>
-        <img src="../images/logo.png" alt="Logo" width="15%">
-        <div id="place"> </div>
+        <img src="../images/logo.png" alt="Logo">
         <nav>
             <ul>
-                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="accueil.html" class="active">Accueil</a></li>
                 <li><a href="produits.html">La Carte</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
                 <li><a href="profil.html">Mon Profil</a></li>
                 <li><a href="notation.html">Donner mon avis</a></li>
-
-                <div class="search-box">
-                    <input type="text" class="search-input" placeholder="RECHERCHER DANS LA GALAXIE...">
-                    <button class="search-btn">🔍</button>
-                </div>
             </ul>
-
         </nav>
+
+        <div class="header-right">
+            <div class="member-space">
+                <a href="connexion.html" class="btn-member btn-login">🔐 Connexion</a>
+                <a href="inscription.html" class="btn-member btn-signup">✨ Inscription</a>
+            </div>
+
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="RECHERCHER...">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
     </header>
 
     <main>
         <div id="bienvenue">
             <h1>Bienvenue sur la Table des Jedi</h1>
             <div class="cta-container">
-                <input type="button" class="btn-carte" value="Voir la carte">
+                <a href="produits.html" class="btn-carte">Voir la carte</a>
             </div>
         </div>
         <div id="presentation">
