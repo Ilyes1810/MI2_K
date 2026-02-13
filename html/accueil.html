@@ -55,6 +55,28 @@
         <section id="plat-du-jour">
             <h2>Ce que le Conseil des jedi vous recommande :</h2>
             <div id="plats-container">
+                <!-- Inputs Radio (Cachés) pour contrôler les slides -->
+                <input type="radio" name="slider" id="auto" checked>
+                <input type="radio" name="slider" id="slide1">
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+
+                <!-- Flèches de Navigation (Labels) -->
+                <div class="slider-controls">
+                    <!-- Flèches "Précédent" -->
+                    <label for="slide4" class="arrow prev slide1-control">❮</label>
+                    <label for="slide1" class="arrow prev slide2-control">❮</label>
+                    <label for="slide2" class="arrow prev slide3-control">❮</label>
+                    <label for="slide3" class="arrow prev slide4-control">❮</label>
+
+                    <!-- Flèches "Suivant" -->
+                    <label for="slide2" class="arrow next slide1-control">❯</label>
+                    <label for="slide3" class="arrow next slide2-control">❯</label>
+                    <label for="slide4" class="arrow next slide3-control">❯</label>
+                    <label for="slide1" class="arrow next slide4-control">❯</label>
+                </div>
+
                 <div id="slider">
                     <div class="slide">
                         <img src="../images/boisson/jusdejabba.jpg" alt="Jus de Jabba">
